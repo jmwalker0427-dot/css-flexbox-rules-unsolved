@@ -24,9 +24,30 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+.content {
+  display: flex;
+  gap: 50px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
 }
 
 .subtext {
@@ -37,6 +58,11 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
 }
 
 a {
@@ -61,6 +87,12 @@ input[type="radio"] {
   padding: 0;
 }
 
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 input[type="submit"] {
   width: unset;
   height: unset;
@@ -80,6 +112,12 @@ input[type="submit"]:hover {
   background: #294bbb;
 }
 
-.form select {
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+form select {
   height: 30px;
 }
